@@ -4,5 +4,5 @@
 body .msg-box {
   display: flex;
   justify-content: center;
-  color: blue;
+  color: darkgreen;
 }
