@@ -1,7 +1,8 @@
 /*!**********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
   \**********************************************************************************************************/
-body div {
+body .msg-box {
   display: flex;
   justify-content: center;
+  color: blue;
 }
