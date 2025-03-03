@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "deploy": "gh-pages -d build",
+    "start:server": "node server/index.mjs"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "path": "^0.12.7",
