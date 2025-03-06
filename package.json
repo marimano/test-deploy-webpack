@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "deploy": "gh-pages -d build",
-    "start:server": "node server/index.mjs"
+    "start:server": "nodemon server/index.mjs",
+    "start:atlas": "set MONGO_URL=\"mongodb+srv://marfayaga:spel9n6heAtVw8wP@clusterhillel.s63wg.mongodb.net/?retryWrites=true&w=majority&appName=ClusterHillel\" && nodemon server/index.mjs"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
+    "nodemon": "^3.1.9",
     "path": "^0.12.7",
     "sass": "^1.85.0",
     "sass-loader": "^16.0.5",
@@ -27,5 +29,8 @@
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.12.0"
   }
 }

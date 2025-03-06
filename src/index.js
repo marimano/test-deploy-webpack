@@ -13,3 +13,20 @@ messageBlock.addEventListener('click', async () => {
   usersList.innerHTML = '';
   usersList.append(...usersItems);
 });
+
+document.querySelector('.add-btn').addEventListener('click', async () => {
+  const newUser = {
+    name: 'Jane (' + Date.now() + ')',
+    age: 30,
+    email: `jjj${Date.now()}@gmail.com`
+  };
+  const response = await fetch('/user', { 
+    method: 'POST', 
+    body: JSON.stringify(newUser),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  const { id, message } = await response.json();
+  console.log(message);
+});
